@@ -1,0 +1,892 @@
+19:34:18 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:86:14: warning: unused variable 'numeral_time' [-Wunused-variable]
+     number_t numeral_time;
+              ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'get_number':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:146:26: error: invalid type argument of '->' (have 'my_time_t {aka struct <anonymous>}')
+  num->milli = (int)chrono->milli;
+                          ^~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: At top level:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:150:6: error: conflicting types for 'update_display'
+ void update_display(number_t chrono) {
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:54:6: note: previous declaration of 'update_display' was here
+ void update_display(const my_time_t *chrono);
+      ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/app_timer_irq.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:48 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:86:14: warning: unused variable 'numeral_time' [-Wunused-variable]
+     number_t numeral_time;
+              ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'get_number':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:146:26: error: 'my_time_t {aka struct <anonymous>}' has no member named 'milli'
+  num->milli = (int)chrono.milli;
+                          ^
+make: *** [src/subdir.mk:29: src/app_timer_irq.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:05 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:86:14: warning: unused variable 'numeral_time' [-Wunused-variable]
+     number_t numeral_time;
+              ^~~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+19:46:13 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:112:34: error: expected ')' before 'and'
+    if((chrono.milliseconds == 0) and (chrono.seconds == 0)){
+                                  ^~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:117:10: warning: implicit declaration of function 'get_number' [-Wimplicit-function-declaration]
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:122:9: warning: conflicting types for 'get_number'
+    void get_number(number_t *num, my_time_t chrono)
+         ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:122:9: error: static declaration of 'get_number' follows non-static declaration
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:117:10: note: previous implicit declaration of 'get_number' was here
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'get_number':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:123:6: error: expected declaration specifiers before '}' token
+      }void update_display(number_t chrono)
+      ^
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:26:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:124:9: error: expected '=', ',', ';', 'asm' or '__attribute__' before '_Bool'
+         bool currentState[NUM_KEYS] = {false, false, false, false};
+         ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:124:67: error: expected declaration specifiers before ';' token
+         bool currentState[NUM_KEYS] = {false, false, false, false};
+                                                                   ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:125:9: error: expected declaration specifiers before 'if'
+         if (currentState[0] && !previousState[0])
+         ^~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:131:9: error: expected declaration specifiers before 'if'
+         if (currentState[1] && !previousState[2])
+         ^~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:137:9: error: expected declaration specifiers before 'if'
+         if (currentState[3] && !previousState[3])
+         ^~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:147:9: error: expected declaration specifiers before 'for'
+         for (int i = 0; i < NUM_KEYS; i++)
+         ^~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:147:25: error: expected declaration specifiers before 'i'
+         for (int i = 0; i < NUM_KEYS; i++)
+                         ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:147:39: error: expected declaration specifiers before 'i'
+         for (int i = 0; i < NUM_KEYS; i++)
+                                       ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:151:5: error: expected declaration specifiers before '}' token
+     }
+     ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:153:5: error: expected declaration specifiers before 'return'
+     return 0;
+     ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:154:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:157:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void init_chrono(my_time_t *chrono, uint32_t seconds) {
+                                                       ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:162:49: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void get_number(number_t *num, my_time_t chrono){
+                                                 ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:171:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void update_display(number_t chrono) {
+                                      ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:183:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:187:1: error: expected '{' at end of input
+ }
+ ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:187:1: error: expected declaration or statement at end of input
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:187:1: error: expected declaration or statement at end of input
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:98:15: warning: unused variable 'value_switches' [-Wunused-variable]
+      uint32_t value_switches = Switchs_read();
+               ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:187:1: error: expected declaration or statement at end of input
+ }
+ ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:95:10: warning: unused variable 'previousState' [-Wunused-variable]
+     bool previousState[NUM_KEYS] = {false, false, false, false};
+          ^~~~~~~~~~~~~
+At top level:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:122:9: warning: 'get_number' defined but not used [-Wunused-function]
+    void get_number(number_t *num, my_time_t chrono)
+         ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/app_timer_irq.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:51:03 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:117:10: warning: implicit declaration of function 'get_number' [-Wimplicit-function-declaration]
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: At top level:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:162:6: warning: conflicting types for 'get_number'
+ void get_number(number_t *num, my_time_t chrono){
+      ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:117:10: note: previous implicit declaration of 'get_number' was here
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+19:57:43 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:89:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:116:10: warning: implicit declaration of function 'get_number' [-Wimplicit-function-declaration]
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: At top level:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:163:6: warning: conflicting types for 'get_number'
+ void get_number(number_t *num, my_time_t chrono){
+      ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:116:10: note: previous implicit declaration of 'get_number' was here
+          get_number(numeral_time,chrono);
+          ^~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+19:58:32 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:117:21: error: incompatible type for argument 1 of 'get_number'
+          get_number(numeral_time,chrono);
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:55:6: note: expected 'number_t * {aka struct <anonymous> *}' but argument is of type 'number_t {aka struct <anonymous>}'
+ void get_number(number_t *num, my_time_t chrono);
+      ^~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:143:21: error: incompatible type for argument 1 of 'get_number'
+          get_number(numeral_time,chrono);
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:55:6: note: expected 'number_t * {aka struct <anonymous> *}' but argument is of type 'number_t {aka struct <anonymous>}'
+ void get_number(number_t *num, my_time_t chrono);
+      ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/app_timer_irq.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:59:10 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:20:36 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:23:08 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:60:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(switchDirection, SWITCHES_MASK << SWITCHS_OFFSET , IN);
+                    ^~~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:67:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+                    ^~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:75:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(keyDirection, KEY_MASK << KEYS_OFFSET, IN);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:87:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:81:21: warning: unused variable 'dataRegister' [-Wunused-variable]
+  volatile uint32_t *dataRegister = PIO1_DATA;
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:133:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:133:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:144:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:144:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:191:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:191:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:205:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] \n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:205:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Read_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:237:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:237:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:240:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:23:15 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+make: Nothing to be done for 'all'.
+20:38:43 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:42:01 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'get_number':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:165:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+  printf("chrono %d \n", chrono.seconds);
+                  ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:42:08 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:50 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'get_number':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:165:18: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+  printf("chrono %d \n", chrono.seconds);
+                  ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:50:41 **** Build of configuration Debug for project app_timer_irq ****
+make all 
+make: Nothing to be done for 'all'.
+20:54:09 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:57:33 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+20:59:33 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:09:20 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/timer_config.d" -MT"src/timer_config.o" -c -o "src/timer_config.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'set_mode':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Not a valid mode\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'set_interrupt_mask':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:72:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Not a valid interrupt mask\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:72:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'timer_load':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:81:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Value too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:81:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:1:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'clear_interrupt':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.h:4:26: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define TIMER_REG(_x_)   *(volatile uint32_t *)(OSC1_TIMER0_BASE + _x_) // _x_ is an offset with respect to the base address
+                          ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:89:25: note: in expansion of macro 'TIMER_REG'
+  volatile int * clear = TIMER_REG(TS_EOI_OFFSET);
+                         ^~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:89:17: warning: unused variable 'clear' [-Wunused-variable]
+  volatile int * clear = TIMER_REG(TS_EOI_OFFSET);
+                 ^~~~~
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:13:26 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/timer_config.d" -MT"src/timer_config.o" -c -o "src/timer_config.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'set_mode':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Not a valid mode\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:55:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'set_interrupt_mask':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:72:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Not a valid interrupt mask\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:72:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'timer_load':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:81:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Value too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:81:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:1:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c: In function 'clear_interrupt':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.h:4:26: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define TIMER_REG(_x_)   *(volatile uint32_t *)(OSC1_TIMER0_BASE + _x_) // _x_ is an offset with respect to the base address
+                          ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:89:25: note: in expansion of macro 'TIMER_REG'
+  volatile int * clear = TIMER_REG(TS_EOI_OFFSET);
+                         ^~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c:89:17: warning: unused variable 'clear' [-Wunused-variable]
+  volatile int * clear = TIMER_REG(TS_EOI_OFFSET);
+                 ^~~~~
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/timer_config.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:14:40 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:17:52 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:19:43 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:24:12 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:60:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(switchDirection, SWITCHES_MASK << SWITCHS_OFFSET , IN);
+                    ^~~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:67:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+                    ^~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:75:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(keyDirection, KEY_MASK << KEYS_OFFSET, IN);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:87:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:81:21: warning: unused variable 'dataRegister' [-Wunused-variable]
+  volatile uint32_t *dataRegister = PIO1_DATA;
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:119:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:133:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:133:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:144:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:144:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:191:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:191:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:191:61: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+                                                             ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:205:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:205:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:205:70: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+                                                                      ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Read_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:237:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:237:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:240:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:25:30 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:90:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:100:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill", chrono.seconds, chrono.milliseconds);
+                            ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:100:35: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill", chrono.seconds, chrono.milliseconds);
+                                   ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:28:48 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:88:17: error: incompatible type for argument 1 of 'init_chrono'
+     init_chrono(chrono, 0);
+                 ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:53:6: note: expected 'my_time_t * {aka struct <anonymous> *}' but argument is of type 'my_time_t {aka struct <anonymous>}'
+ void init_chrono(my_time_t *chrono, uint32_t seconds);
+      ^~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:101:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill\n", chrono.seconds, chrono.milliseconds);
+                            ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:101:35: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill\n", chrono.seconds, chrono.milliseconds);
+                                   ^
+make: *** [src/subdir.mk:29: src/app_timer_irq.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:29:05 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:101:28: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill\n", chrono.seconds, chrono.milliseconds);
+                            ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:101:35: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+      printf("Value chrono %d sec %d mill\n", chrono.seconds, chrono.milliseconds);
+                                   ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:29:56 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:30:03 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:09 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+21:33:38 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+09:52:20 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:60:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(switchDirection, SWITCHES_MASK << SWITCHS_OFFSET , IN);
+                    ^~~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:67:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+                    ^~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:75:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(keyDirection, KEY_MASK << KEYS_OFFSET, IN);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:87:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:85:10: warning: unused variable 'value' [-Wunused-variable]
+  uint8_t value = 0;
+          ^~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:84:10: warning: unused variable 'hex3' [-Wunused-variable]
+  uint8_t hex3 = 3;
+          ^~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:83:10: warning: unused variable 'hex2' [-Wunused-variable]
+  uint8_t hex2 = 2;
+          ^~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:81:21: warning: unused variable 'dataRegister' [-Wunused-variable]
+  volatile uint32_t *dataRegister = PIO1_DATA;
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:131:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:131:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:142:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:142:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:61: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+                                                             ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:70: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+                                                                      ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Read_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:235:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:235:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:238:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 

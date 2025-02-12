@@ -1,0 +1,109 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : hps_application.c
+ * Author               : 
+ * Date                 : 
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Turn ON leds and 7 segment display depending the value of button and switch, for DE1-SoC board
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ * 
+ *
+*****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "axi_lw.h"
+#include "pio_function.h"
+
+
+int __auto_semihosting;
+
+# define NUM_KEYS 4
+
+int main(void){
+
+	printf("Laboratoire: Programme simple avec E/S du HPS \n");
+
+	volatile uint32_t *variable = (volatile uint32_t *) CONSTANTE_BASE;
+	printf("Constante ID : 0x%x \n", *variable);
+	// Initialize all peripherals
+	Leds_init();
+	Segs7_init();
+	Switchs_init();
+	Keys_init();
+
+	bool previousState[NUM_KEYS] = {false, false, false, false};
+	while(true){
+		uint32_t valueSeg2 = Read_hex(2);
+		uint32_t valueSeg3 = Read_hex(3);
+		uint32_t valueSwitch = Switchs_read();
+
+		bool currentState[NUM_KEYS] = {false, false, false, false};
+
+
+		for (int i = 0; i < NUM_KEYS; i++) {
+			currentState[i] = Key_read(i);
+		}
+
+		if(currentState[0] && !previousState[0]){
+			uint32_t valueS89 = (valueSwitch & SWITCH_9_8) >> 8;
+
+			switch(valueS89){
+				case 0:
+
+					Leds_write(valueSwitch & SWITCH_7_0);
+					break;
+				case 1:
+					Leds_set(valueSwitch & SWITCH_7_0);
+					break;
+				case 2:
+					Leds_clear(valueSwitch & SWITCH_7_0);
+					break;
+				case 3:
+					Leds_toggle(LEDS_7_0);
+					break;
+				default:
+					printf("Erreur de numéro\n ");
+			}
+
+		}
+		if(currentState[1] && !previousState[1]){
+
+			uint32_t valueH0 = valueSwitch & SWITCH_3_0;
+			uint32_t valueH1 = (valueSwitch & SWITCH_7_4) >> 4;
+			Seg7_write_hex(0,valueH0);
+			Seg7_write_hex(1,valueH1);
+		}
+		if(currentState[2] && !previousState[2]){
+
+			valueSeg2 = (valueSeg2 + 1) % 16;
+			Seg7_write_hex(2,valueSeg2);
+
+		}
+		if(currentState[3] && !previousState[3]){
+
+			valueSeg3 = valueSeg3 == 0x20 ? 0x1 : valueSeg3 << 1;
+			Seg7_write(3,valueSeg3);
+		}
+
+		for (int i = 0; i < NUM_KEYS; i++) {
+			previousState[i] = currentState[i];
+
+		}
+	}
+}
+
+

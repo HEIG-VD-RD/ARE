@@ -1,0 +1,102 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : hps_application.c
+ * Author               : 
+ * Date                 : 
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Turn ON leds and 7 segment display depending the value of button and switch, for DE1-SoC board
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ * 
+ *
+*****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "axi_lw.h"
+#include "pio_function.h"
+
+
+int __auto_semihosting;
+# define NUM_KEYS 4
+
+int main(void){
+
+
+	printf("PIo_CORE0_BASE_ADD + OFFSET 0x%x and 0x%x: \n", (PIO0_REG(PIO_DIRECTION_OFFSET)), PIO0_DIRECTION );
+	printf("Laboratoire: Programme simple avec E/S du HPS \n");
+
+	// Initialize all peripherals
+	printf("sur le point d init les leds\n");
+	Leds_init();
+	Segs7_init();
+	Switchs_init();
+	Keys_init();
+
+	bool previous_state[NUM_KEYS] = {false, false, false, false};
+	while(true){
+		uint32_t valueSeg2 = read_hex(2);
+		uint32_t valueSeg3 = read_hex(3);
+		printf("valueSeg3 : 0x%x \n", valueSeg3);
+
+		bool current_state[NUM_KEYS] = {false, false, false, false};
+
+
+		for (int i = 0; i < NUM_KEYS; i++) {
+			current_state[i] = Key_read(i);
+
+		}
+//			printf("\n");
+//
+//			printf("previous state : \n");
+//		for (int i = 0; i < NUM_KEYS; i++) {
+//			previous_state[i] = Key_read(i);
+//			printf("%d, ", previous_state[i]);
+//		}
+//			printf("\n");
+
+		if(current_state[0] && !previous_state[0]){
+
+		}
+		if(current_state[1] && !previous_state[1]){
+
+		}
+		if(current_state[2] && !previous_state[2]){
+
+			valueSeg2 = (valueSeg2 + 1) % 16;
+			Seg7_write_hex(2,valueSeg2);
+
+		}
+		if(current_state[3] && !previous_state[3]){
+
+			if(valueSeg3 == 0x40){
+
+				valueSeg3 = 0x0;
+			}
+			else {
+				valueSeg3 = valueSeg3 << 1;
+			}
+			Seg7_write(3,valueSeg3);
+		}
+
+
+		for (int i = 0; i < NUM_KEYS; i++) {
+			previous_state[i] = current_state[i];
+
+		}
+	}
+}
+
+

@@ -1,0 +1,1597 @@
+!SESSION 2024-10-15 17:53:06.236 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-15 17:53:48.806
+!MESSAGE Restoring info for: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:454)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2719)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_43cb7oszbqfv7i2rx8alv7gnn/modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:296)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:400)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:452)
+	... 9 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-15 17:53:48.915
+!MESSAGE Finished restoring information for: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar at: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_43cb7oszbqfv7i2rx8alv7gnn
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar at: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_43cb7oszbqfv7i2rx8alv7gnn
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:499)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2719)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-15 17:53:48.990
+!MESSAGE Info: Rebuilding internal caches: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/com.python.pydev.analysis/jython_v1_43cb7oszbqfv7i2rx8alv7gnn/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.ui 4 0 2024-10-15 17:54:00.808
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4723)
+	at org.eclipse.swt.SWT.error(SWT.java:4638)
+	at org.eclipse.swt.SWT.error(SWT.java:4609)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:550)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:470)
+	at org.eclipse.swt.widgets.Label.setImage(Label.java:631)
+	at org.eclipse.jface.dialogs.TitleAreaDialog.setTitleImage(TitleAreaDialog.java:677)
+	at org.eclipse.jface.wizard.WizardDialog.hardClose(WizardDialog.java:893)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:840)
+	at com.arm.commons.eclipse.jface.DSWizardDialog.finishPressed(DSWizardDialog.java:97)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at com.arm.ds.ui.preference.wizard.ui.PreferencesWizard.openWizard(PreferencesWizard.java:115)
+	at com.arm.ds.ui.preference.wizard.ui.PreferencesWizard.startPreferenceWizard(PreferencesWizard.java:95)
+	at com.arm.ds.ui.PluginStartup.lambda$0(PluginStartup.java:49)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-10-15 17:54:02.743
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob
+!SESSION 2024-10-15 17:54:04.312 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data file:/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-15 17:55:07.871
+!MESSAGE The python client still hasn't connected back to the eclipse java vm (will retry...)
+!STACK 0
+java.lang.RuntimeException: The python client still hasn't connected back to the eclipse java vm (will retry...)
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:330)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:240)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:168)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:218)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:377)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:335)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:374)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:256)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-15 17:55:12.882
+!MESSAGE Attempt: 2 of 5 failed, trying again...(socket connected: still null)
+!STACK 0
+java.lang.RuntimeException: Attempt: 2 of 5 failed, trying again...(socket connected: still null)
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:349)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:240)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:168)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:218)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:377)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:335)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:374)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:256)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-15 17:55:18.887
+!MESSAGE Attempt: 3 of 5 failed, trying again...(socket connected: still null)
+!STACK 0
+java.lang.RuntimeException: Attempt: 3 of 5 failed, trying again...(socket connected: still null)
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:349)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:240)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:168)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:218)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:377)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:335)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:374)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:256)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-15 17:56:16.145
+!MESSAGE Indexed 'hps_gpio_interface' (0 sources, 0 headers) in 0.004 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 07:49:35.811
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:01:31.606
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:04:25.026
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY org.eclipse.jface 2 0 2024-10-16 08:12:33.380
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1705)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:12:37.921
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:14:29.781
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:15:37.245
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:17:54.231
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:18:21.931
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 08:22:43.609
+!MESSAGE /opt/devstudio/2020.1/sw/../lost+found
+!STACK 0
+com.arm.ds.components.ComponentManagerException: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:137)
+	at com.arm.ds.components.legacy.LegacyComponentManager.find(LegacyComponentManager.java:123)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findExecutable(LegacyComponentManager.java:100)
+	at com.arm.debug.control.target.AbstractTargetController.resolveExecutableWithComponentManager(AbstractTargetController.java:174)
+	at com.arm.debug.control.target.AbstractTargetController.resolveFile(AbstractTargetController.java:192)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:235)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /opt/devstudio/2020.1/sw/../lost+found
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newDirectoryStream(UnixFileSystemProvider.java:432)
+	at java.base/java.nio.file.Files.newDirectoryStream(Files.java:471)
+	at java.base/java.nio.file.FileTreeWalker.visit(FileTreeWalker.java:300)
+	at java.base/java.nio.file.FileTreeWalker.next(FileTreeWalker.java:373)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2760)
+	at com.arm.ds.components.legacy.LegacyComponentManager.findInPath(LegacyComponentManager.java:131)
+	... 19 more
+!SESSION 2024-10-16 08:40:03.328 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-10-16 08:40:10.418
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2024-10-16 13:24:56.354 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/reds/Desktop/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-10-16 13:24:57.453
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:04.231
+!MESSAGE Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.debug.interpreter.jython.api_2020.1.1.20201216_103632
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.debug.interpreter.jython.api_2020.1.1.20201216_103632
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:04.232
+!MESSAGE Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/Jython/Lib
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/Jython/Lib
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:04.234
+!MESSAGE Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /opt/devstudio/2020.1/sw/ide/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:04.236
+!MESSAGE Unable to track file that does not exist: /opt/devstudio/2020.1/sw/java/lib/jrt-fs.jar
+!STACK 0
+java.lang.RuntimeException: Unable to track file that does not exist: /opt/devstudio/2020.1/sw/java/lib/jrt-fs.jar
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_core.path_watch.PathWatch.track(PathWatch.java:316)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:459)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.afterSetInfos(SyncSystemModulesManagerScheduler.java:440)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.registerInterpreterManager(SyncSystemModulesManagerScheduler.java:66)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler.start(SyncSystemModulesManagerScheduler.java:88)
+	at org.python.pydev.plugin.PydevPlugin$1.run(PydevPlugin.java:158)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface 2 0 2024-10-16 13:25:07.370
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:515)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1705)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:08.106
+!MESSAGE Restoring info for: /opt/arm/developmentstudio-2020.1-1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /opt/arm/developmentstudio-2020.1-1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:454)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2719)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: /home/reds/Desktop/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_d41a98zp14tw9ynvgzhur97si/modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:296)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:400)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:452)
+	... 9 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2024-10-16 13:25:08.157
+!MESSAGE Finished restoring information for: /opt/arm/developmentstudio-2020.1-1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar at: /home/reds/Desktop/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_d41a98zp14tw9ynvgzhur97si
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /opt/arm/developmentstudio-2020.1-1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20201216_103632/lib/jython-2.7.2-standalone.jar at: /home/reds/Desktop/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/org.python.pydev/v1_d41a98zp14tw9ynvgzhur97si
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:499)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2719)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2024-10-16 13:25:08.189
+!MESSAGE Info: Rebuilding internal caches: /home/reds/Desktop/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/proj/.metadata/.plugins/com.python.pydev.analysis/jython_v1_d41a98zp14tw9ynvgzhur97si/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+!SESSION 2024-10-16 13:26:10.739 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/proj
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-10-16 13:26:11.859
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2024-10-16 13:26:12.814
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-10-16 13:26:12.814
+!MESSAGE Could not read metadata for 'hps_gpio_interface'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/hps_gpio_interface)[567]: java.lang.Exception: The project description file (.project) for 'hps_gpio_interface' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-10-16 13:26:12.815
+!MESSAGE The project description file (.project) for 'hps_gpio_interface' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'hps_gpio_interface' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:908)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:868)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:724)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1555)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2452)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2210)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:489)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1015)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:603)
+	at org.eclipse.osgi.container.Module.start(Module.java:467)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:571)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-16 13:26:48.978
+!MESSAGE Indexed 'hps_pio_interface' (0 sources, 0 headers) in 0.005 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.jface 2 0 2024-10-16 13:28:48.676
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1705)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 14:12:32.919
+!MESSAGE Wait for stopped interrupted
+!STACK 0
+com.arm.debug.core.interfaces.engine.DebugException: Wait for stopped interrupted
+	at com.arm.debug.interpreter.ds.commands.exec.WaitCommand.execute(WaitCommand.java:80)
+	at com.arm.debug.interpreter.ds.commands.PauseCommand.execute(PauseCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter.executeCommand(DSInterpreter.java:353)
+	at com.arm.debug.interpreter.ds.DSInterpreter.execute(DSInterpreter.java:402)
+	at com.arm.debug.interpreter.ds.DSInterpreter.executeLine(DSInterpreter.java:217)
+	at com.arm.debug.service.DebugService.execute(DebugService.java:809)
+	at com.arm.debug.service.DebugService.waitForTargetToStop(DebugService.java:839)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.arm.debug.service.proxy.DebugServiceWrapper.invokeImpl(DebugServiceWrapper.java:110)
+	at com.arm.debug.service.proxy.DebugServiceWrapper.access$0(DebugServiceWrapper.java:93)
+	at com.arm.debug.service.proxy.DebugServiceWrapper$1.run(DebugServiceWrapper.java:88)
+	at com.arm.debug.service.proxy.SingleThreader$QueuedCall.run(SingleThreader.java:53)
+	at com.arm.debug.service.proxy.SingleThreader$1.run(SingleThreader.java:116)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.resume(Commands.java:313)
+	at com.arm.debug.views.control.actions.ContinueAction.run(ContinueAction.java:41)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.resume(Commands.java:313)
+	at com.arm.debug.views.control.actions.ContinueAction.run(ContinueAction.java:41)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:579)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$5(ActionContributionItem.java:452)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5687)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1423)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4955)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4448)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+Asynchronously called from thread Worker-29: executing debug commands
+	at com.arm.debug.service.proxy.SingleThreader.execute(SingleThreader.java:148)
+	at com.arm.debug.service.proxy.DebugServiceWrapper.invoke(DebugServiceWrapper.java:77)
+	at com.sun.proxy.$Proxy72.waitForTargetToStop(Unknown Source)
+	at com.arm.debug.api.commands.Continue.execute(Continue.java:17)
+	at com.arm.debug.api.commands.Continue.execute(Continue.java:1)
+	at com.arm.debug.api.AbstractDebugCommand.call(AbstractDebugCommand.java:50)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.arm.debug.control.CommandTask.run(CommandTask.java:53)
+	at com.arm.debug.control.ConnectionController$7.run(ConnectionController.java:1954)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 14:48:34.566
+!MESSAGE Variable references non-existent resource : ${workspace_loc:/hps_pio_interface/Debug/hps_pio_interface.axf}
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 14:48:34.568
+!MESSAGE Unable to connect to DE1-SOC. Launch configuration has errors
+!STACK 0
+com.arm.debug.control.LaunchException: Variable references non-existent resource : ${workspace_loc:/hps_pio_interface/Debug/hps_pio_interface.axf}
+	at com.arm.debug.control.ConnectionController.validateConfigAgainstLauncherPanel(ConnectionController.java:657)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:666)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-10-16 17:49:42.224 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2024-10-16 17:52:37.803
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1705)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 19:08:02.205
+!MESSAGE General error on memory or register access.
+!STACK 0
+com.arm.debug.interpreter.ds.DSException: Failed to load "hps_pio_interface.axf"
+	at com.arm.debug.interpreter.ds.commands.file.AbstractFileCommand.executeOrUnload(AbstractFileCommand.java:84)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.execute(LoadCommand.java:56)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:88)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.loadFile(Commands.java:265)
+	at com.arm.debug.api.Commands.loadFileAndWait(Commands.java:275)
+	at com.arm.debug.control.ConnectionController.doPostDebugServiceInitialization(ConnectionController.java:1276)
+	at com.arm.debug.control.ConnectionController.manageDebugServiceAndInitialize(ConnectionController.java:1082)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:622)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.core.interfaces.memory.MemoryException: Failed to write 8 bytes to address S:0x0010B920
+	at com.arm.debug.targetaccess.device.MemoryAccess.doWriteMemory(MemoryAccess.java:488)
+	at com.arm.debug.targetaccess.device.MemoryAccess.writeMemory(MemoryAccess.java:430)
+	at com.arm.debug.targetaccess.device.MemoryAccess.writeMemory(MemoryAccess.java:419)
+	at com.arm.debug.core.engine.memory.ops.WriteOp.performOp(WriteOp.java:53)
+	at com.arm.debug.core.engine.memory.ops.MemoryOperation.visitRange(MemoryOperation.java:44)
+	at com.arm.debug.core.engine.memory.MemoryAccess.writeMemory(MemoryAccess.java:212)
+	at com.arm.debug.core.engine.image.ImageControl.downloadImageToBoard(ImageControl.java:874)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:721)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:354)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:254)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.tryExecute(LoadCommand.java:112)
+	at com.arm.debug.interpreter.ds.commands.file.AbstractFileCommand.executeOrUnload(AbstractFileCommand.java:73)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.execute(LoadCommand.java:56)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:88)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+Caused by: com.arm.debug.dtsl.nativelayer.NativeException: General error on memory or register access.
+	at com.arm.debug.dtsl.components.AddressFilterAdapter$1.memWrite(AddressFilterAdapter.java:145)
+	at com.arm.debug.dtsl.components.Device$MemoryAccessWrapper.memWrite(Device.java:144)
+	at com.arm.debug.dtsl.components.Device.memWrite(Device.java:513)
+	at com.arm.debug.targetaccess.device.MemoryAccess.doWriteMemory(MemoryAccess.java:467)
+	... 20 more
+Caused by: com.arm.rddi.RDDIException: General error on memory or register access.
+	at com.arm.rddi.RDDI.checkResult(RDDI.java:2124)
+	at com.arm.rddi.RDDI.access$1(RDDI.java:2111)
+	at com.arm.rddi.RDDI$Debug.memWrite(RDDI.java:398)
+	at com.arm.debug.dtsl.components.AddressFilterAdapter$1.memWrite(AddressFilterAdapter.java:143)
+	... 23 more
+Asynchronously called from thread Worker-39: executing debug commands
+	at com.arm.debug.service.proxy.SingleThreader.execute(SingleThreader.java:148)
+	at com.arm.debug.service.proxy.DebugServiceWrapper.invoke(DebugServiceWrapper.java:77)
+	at com.sun.proxy.$Proxy61.loadfile(Unknown Source)
+	at com.arm.debug.api.commands.LoadFile.execute(LoadFile.java:26)
+	at com.arm.debug.api.commands.LoadFile.execute(LoadFile.java:1)
+	at com.arm.debug.api.AbstractDebugCommand.call(AbstractDebugCommand.java:50)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.arm.debug.control.CommandTask.run(CommandTask.java:53)
+	at com.arm.debug.control.ConnectionController$7.run(ConnectionController.java:1954)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 19:08:02.206
+!MESSAGE Unable to load one or more images
+!STACK 0
+java.util.concurrent.ExecutionException: com.arm.debug.interpreter.ds.DSException: Failed to load "hps_pio_interface.axf"
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191)
+	at com.arm.debug.control.CommandTask.get(CommandTask.java:194)
+	at com.arm.debug.api.Commands.loadFileAndWait(Commands.java:275)
+	at com.arm.debug.control.ConnectionController.doPostDebugServiceInitialization(ConnectionController.java:1276)
+	at com.arm.debug.control.ConnectionController.manageDebugServiceAndInitialize(ConnectionController.java:1082)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:622)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.interpreter.ds.DSException: Failed to load "hps_pio_interface.axf"
+	at com.arm.debug.interpreter.ds.commands.file.AbstractFileCommand.executeOrUnload(AbstractFileCommand.java:84)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.execute(LoadCommand.java:56)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:88)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.loadFile(Commands.java:265)
+	at com.arm.debug.api.Commands.loadFileAndWait(Commands.java:275)
+	at com.arm.debug.control.ConnectionController.doPostDebugServiceInitialization(ConnectionController.java:1276)
+	at com.arm.debug.control.ConnectionController.manageDebugServiceAndInitialize(ConnectionController.java:1082)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:622)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.loadFile(Commands.java:265)
+	... 15 more
+Caused by: com.arm.debug.core.interfaces.memory.MemoryException: Failed to write 8 bytes to address S:0x0010B920
+	at com.arm.debug.targetaccess.device.MemoryAccess.doWriteMemory(MemoryAccess.java:488)
+	at com.arm.debug.targetaccess.device.MemoryAccess.writeMemory(MemoryAccess.java:430)
+	at com.arm.debug.targetaccess.device.MemoryAccess.writeMemory(MemoryAccess.java:419)
+	at com.arm.debug.core.engine.memory.ops.WriteOp.performOp(WriteOp.java:53)
+	at com.arm.debug.core.engine.memory.ops.MemoryOperation.visitRange(MemoryOperation.java:44)
+	at com.arm.debug.core.engine.memory.MemoryAccess.writeMemory(MemoryAccess.java:212)
+	at com.arm.debug.core.engine.image.ImageControl.downloadImageToBoard(ImageControl.java:874)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:721)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:354)
+	at com.arm.debug.core.engine.image.ImageControl.loadImage(ImageControl.java:254)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.tryExecute(LoadCommand.java:112)
+	at com.arm.debug.interpreter.ds.commands.file.AbstractFileCommand.executeOrUnload(AbstractFileCommand.java:73)
+	at com.arm.debug.interpreter.ds.commands.file.LoadCommand.execute(LoadCommand.java:56)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:88)
+	at com.arm.debug.interpreter.ds.commands.file.LoadFileCommand.execute(LoadFileCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+Caused by: com.arm.debug.dtsl.nativelayer.NativeException: General error on memory or register access.
+	at com.arm.debug.dtsl.components.AddressFilterAdapter$1.memWrite(AddressFilterAdapter.java:145)
+	at com.arm.debug.dtsl.components.Device$MemoryAccessWrapper.memWrite(Device.java:144)
+	at com.arm.debug.dtsl.components.Device.memWrite(Device.java:513)
+	at com.arm.debug.targetaccess.device.MemoryAccess.doWriteMemory(MemoryAccess.java:467)
+	... 20 more
+Caused by: com.arm.rddi.RDDIException: General error on memory or register access.
+	at com.arm.rddi.RDDI.checkResult(RDDI.java:2124)
+	at com.arm.rddi.RDDI.access$1(RDDI.java:2111)
+	at com.arm.rddi.RDDI$Debug.memWrite(RDDI.java:398)
+	at com.arm.debug.dtsl.components.AddressFilterAdapter$1.memWrite(AddressFilterAdapter.java:143)
+	... 23 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 19:08:02.231
+!MESSAGE Cannot find symbol to start or entrypoint, the file or load commands may be used to set the entrypoint
+!STACK 0
+com.arm.debug.interpreter.ds.DSException: Cannot find symbol to start or entrypoint, the file or load commands may be used to set the entrypoint
+	at com.arm.debug.interpreter.ds.commands.exec.StartCommand.performPostResetWork(StartCommand.java:82)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand.setTargetRunning(RunCommand.java:125)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand.access$1(RunCommand.java:60)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand$1.run(RunCommand.java:191)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand$1.run(RunCommand.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.execute(ConnectionEventManager.java:477)
+	at com.arm.debug.core.engine.connection.Connection.execute(Connection.java:354)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand.execute(RunCommand.java:186)
+	at com.arm.debug.interpreter.ds.commands.exec.StartCommand.execute(StartCommand.java:52)
+	at com.arm.debug.interpreter.ds.commands.exec.RunCommand.execute(RunCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.start(Commands.java:292)
+	at com.arm.debug.control.ConnectionController.doPostDebugServiceInitialization(ConnectionController.java:1404)
+	at com.arm.debug.control.ConnectionController.manageDebugServiceAndInitialize(ConnectionController.java:1082)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:622)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+	at com.arm.debug.control.CommandTask.fillInStackTrace(CommandTask.java:78)
+	at com.arm.debug.control.ConnectionController.execute(ConnectionController.java:1830)
+	at com.arm.debug.api.AbstractCommands.execute(AbstractCommands.java:115)
+	at com.arm.debug.api.Commands.start(Commands.java:292)
+	at com.arm.debug.control.ConnectionController.doPostDebugServiceInitialization(ConnectionController.java:1404)
+	at com.arm.debug.control.ConnectionController.manageDebugServiceAndInitialize(ConnectionController.java:1082)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:622)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Asynchronously called from thread Worker-44: executing debug commands
+	at com.arm.debug.service.proxy.SingleThreader.execute(SingleThreader.java:148)
+	at com.arm.debug.service.proxy.DebugServiceWrapper.invoke(DebugServiceWrapper.java:77)
+	at com.sun.proxy.$Proxy61.start(Unknown Source)
+	at com.arm.debug.api.commands.Start.execute(Start.java:20)
+	at com.arm.debug.api.commands.Start.execute(Start.java:1)
+	at com.arm.debug.api.AbstractDebugCommand.call(AbstractDebugCommand.java:50)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at com.arm.debug.control.CommandTask.run(CommandTask.java:53)
+	at com.arm.debug.control.ConnectionController$7.run(ConnectionController.java:1954)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 19:35:44.059
+!MESSAGE Task com.arm.debug.control.PriorityEventSender$1@1f834705 rejected from java.util.concurrent.ThreadPoolExecutor@59fd5d29[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 47]
+!STACK 0
+java.util.concurrent.RejectedExecutionException: Task com.arm.debug.control.PriorityEventSender$1@1f834705 rejected from java.util.concurrent.ThreadPoolExecutor@59fd5d29[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 47]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at java.base/java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:687)
+	at com.arm.debug.control.PriorityEventSender.queueEvent(PriorityEventSender.java:285)
+	at com.arm.debug.control.PriorityEventSender.processEvent(PriorityEventSender.java:234)
+	at com.arm.debug.control.PriorityEventSender.observeEvent(PriorityEventSender.java:181)
+	at com.arm.debug.control.ConnectionEventManager$1.observeEvent(ConnectionEventManager.java:85)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processEvent(ConnectionEventManager.java:369)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.join(ConnectionEventManager.java:546)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.sendEventAndWait(ConnectionEventManager.java:498)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.shutdown(ConnectionEventManager.java:255)
+	at com.arm.debug.core.engine.connection.Connection.disconnect(Connection.java:632)
+	at com.arm.debug.core.engine.connection.ConnectionBase.destroy(ConnectionBase.java:309)
+	at com.arm.debug.core.engine.connection.Connection.destroy(Connection.java:568)
+	at com.arm.debug.interpreter.ds.DSInterpreter$5.run(DSInterpreter.java:551)
+	at com.arm.debug.interpreter.ds.DSInterpreter$5.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.execute(ConnectionEventManager.java:477)
+	at com.arm.debug.core.engine.connection.Connection.execute(Connection.java:354)
+	at com.arm.debug.interpreter.ds.DSInterpreter.terminate(DSInterpreter.java:548)
+	at com.arm.debug.interpreter.ds.commands.exec.QuitCommand.execute(QuitCommand.java:29)
+	at com.arm.debug.interpreter.ds.commands.exec.QuitCommand.execute(QuitCommand.java:1)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:358)
+	at com.arm.debug.interpreter.ds.DSInterpreter$3.run(DSInterpreter.java:1)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$QueuedTask.run(ConnectionEventManager.java:94)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.processTask(ConnectionEventManager.java:305)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager.access$8(ConnectionEventManager.java:303)
+	at com.arm.debug.core.engine.connection.ConnectionEventManager$2.run(ConnectionEventManager.java:208)
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:17:11.021
+!MESSAGE Unable to connect to DE1-SOC. Unable to connect to DE-SoC on localhost [1-1.5]:DE-SoC 1-1.5
+Failed to communicate with debug hardware using 'DE-SoC on localhost [1-1.5]:DE-SoC 1-1.5'- please check it is available.
+!STACK 0
+com.arm.debug.dtsl.DTSLException: Unable to connect to TCP:localhost
+	at com.arm.debug.dtsl.configurations.ConfigurationBase.connect(ConfigurationBase.java:530)
+	at com.arm.debug.dtsl.impl.ConfigurationConnection.connect(ConfigurationConnection.java:45)
+	at com.arm.debug.control.ConnectionController.doSetupDTSL(ConnectionController.java:863)
+	at com.arm.debug.control.ConnectionController.doSetupDTSLIfRequired(ConnectionController.java:739)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:619)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.dtsl.DTSLException: Unable to connect to TCP:localhost
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:267)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.connect(RDDIConnection.java:171)
+	at com.arm.debug.dtsl.impl.RDDIRootConnection.connect(RDDIRootConnection.java:69)
+	at com.arm.debug.dtsl.configurations.ConfigurationBase.connect(ConfigurationBase.java:512)
+	... 15 more
+Caused by: com.arm.debug.dtsl.nativelayer.NativeException: Failed to communicate with debug hardware using 'TCP:localhost'- please check it is available.
+	at com.arm.debug.dtsl.nativelayer.NativeLayer.wrapRDDIException(NativeLayer.java:29)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:269)
+	... 18 more
+Caused by: com.arm.rddi.RDDIException: Failed to communicate with debug hardware using 'TCP:localhost'- please check it is available.
+	at com.arm.rddi.RDDI.checkResult(RDDI.java:2124)
+	at com.arm.rddi.RDDI.access$1(RDDI.java:2111)
+	at com.arm.rddi.RDDI$Debug.connect(RDDI.java:232)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:207)
+	... 18 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:17:23.061
+!MESSAGE Unable to connect to DE1-SOC. Unable to connect to DE-SoC on localhost [1-1.5]:DE-SoC 1-1.5
+Failed to communicate with debug hardware using 'DE-SoC on localhost [1-1.5]:DE-SoC 1-1.5'- please check it is available.
+!STACK 0
+com.arm.debug.dtsl.DTSLException: Unable to connect to TCP:localhost
+	at com.arm.debug.dtsl.configurations.ConfigurationBase.connect(ConfigurationBase.java:530)
+	at com.arm.debug.dtsl.impl.ConfigurationConnection.connect(ConfigurationConnection.java:45)
+	at com.arm.debug.control.ConnectionController.doSetupDTSL(ConnectionController.java:863)
+	at com.arm.debug.control.ConnectionController.doSetupDTSLIfRequired(ConnectionController.java:739)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:619)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.dtsl.DTSLException: Unable to connect to TCP:localhost
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:267)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.connect(RDDIConnection.java:171)
+	at com.arm.debug.dtsl.impl.RDDIRootConnection.connect(RDDIRootConnection.java:69)
+	at com.arm.debug.dtsl.configurations.ConfigurationBase.connect(ConfigurationBase.java:512)
+	... 15 more
+Caused by: com.arm.debug.dtsl.nativelayer.NativeException: Failed to communicate with debug hardware using 'TCP:localhost'- please check it is available.
+	at com.arm.debug.dtsl.nativelayer.NativeLayer.wrapRDDIException(NativeLayer.java:29)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:269)
+	... 18 more
+Caused by: com.arm.rddi.RDDIException: Failed to communicate with debug hardware using 'TCP:localhost'- please check it is available.
+	at com.arm.rddi.RDDI.checkResult(RDDI.java:2124)
+	at com.arm.rddi.RDDI.access$1(RDDI.java:2111)
+	at com.arm.rddi.RDDI$Debug.connect(RDDI.java:232)
+	at com.arm.debug.dtsl.rddi.RDDIConnection.debugConnect(RDDIConnection.java:207)
+	... 18 more
+!SESSION 2024-10-16 20:18:58.455 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-10-16 20:18:59.654
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:20:12.914
+!MESSAGE Unable to connect to DE1-SOC. The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+!STACK 0
+com.arm.debug.control.LaunchException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:242)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.launch.script.ScriptException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:102)
+	at com.arm.debug.launch.script.TargetControlScriptRunner.run(TargetControlScriptRunner.java:32)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:239)
+	... 14 more
+Caused by: Traceback (most recent call last):
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py", line 48, in <module>
+    startDebugServer(configFile, rddidapBaseName, timeout)
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 319, in startDebugServer
+    launcher.launch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 105, in launch
+    serverProc = self.doLaunch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 137, in doLaunch
+    raise RuntimeError, 'Port 3010 is already in use'
+RuntimeError: Port 3010 is already in use
+
+	at org.python.core.PyException.doRaise(PyException.java:211)
+	at org.python.core.Py.makeException(Py.java:1638)
+	at org.python.core.Py.makeException(Py.java:1642)
+	at rddi_dap_debug_server$py.doLaunch$13(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:196)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.launch$12(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:111)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.startDebugServer$23(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:322)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:306)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:158)
+	at org.python.core.PyFunction.__call__(PyFunction.java:437)
+	at org.python.pycode._pyx1.f$0(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py:48)
+	at org.python.pycode._pyx1.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1687)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:535)
+	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:287)
+	at com.arm.jython.Jython.runScript(Jython.java:81)
+	at com.arm.jython.Jython.runScript(Jython.java:94)
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:91)
+	... 16 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:20:39.858
+!MESSAGE Unable to connect to DE1-SOC. The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+!STACK 0
+com.arm.debug.control.LaunchException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:242)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.launch.script.ScriptException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:102)
+	at com.arm.debug.launch.script.TargetControlScriptRunner.run(TargetControlScriptRunner.java:32)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:239)
+	... 13 more
+Caused by: Traceback (most recent call last):
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py", line 48, in <module>
+    startDebugServer(configFile, rddidapBaseName, timeout)
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 319, in startDebugServer
+    launcher.launch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 105, in launch
+    serverProc = self.doLaunch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 137, in doLaunch
+    raise RuntimeError, 'Port 3010 is already in use'
+RuntimeError: Port 3010 is already in use
+
+	at org.python.core.PyException.doRaise(PyException.java:211)
+	at org.python.core.Py.makeException(Py.java:1638)
+	at org.python.core.Py.makeException(Py.java:1642)
+	at rddi_dap_debug_server$py.doLaunch$13(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:196)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.launch$12(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:111)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.startDebugServer$23(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:322)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:306)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:158)
+	at org.python.core.PyFunction.__call__(PyFunction.java:437)
+	at org.python.pycode._pyx5.f$0(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py:48)
+	at org.python.pycode._pyx5.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1687)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:535)
+	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:287)
+	at com.arm.jython.Jython.runScript(Jython.java:81)
+	at com.arm.jython.Jython.runScript(Jython.java:94)
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:91)
+	... 15 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:21:34.227
+!MESSAGE Unable to connect to DE1-SOC. The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+!STACK 0
+com.arm.debug.control.LaunchException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:242)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.launch.script.ScriptException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:102)
+	at com.arm.debug.launch.script.TargetControlScriptRunner.run(TargetControlScriptRunner.java:32)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:239)
+	... 14 more
+Caused by: Traceback (most recent call last):
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py", line 48, in <module>
+    startDebugServer(configFile, rddidapBaseName, timeout)
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 319, in startDebugServer
+    launcher.launch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 105, in launch
+    serverProc = self.doLaunch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 137, in doLaunch
+    raise RuntimeError, 'Port 3010 is already in use'
+RuntimeError: Port 3010 is already in use
+
+	at org.python.core.PyException.doRaise(PyException.java:211)
+	at org.python.core.Py.makeException(Py.java:1638)
+	at org.python.core.Py.makeException(Py.java:1642)
+	at rddi_dap_debug_server$py.doLaunch$13(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:196)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.launch$12(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:111)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.startDebugServer$23(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:322)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:306)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:158)
+	at org.python.core.PyFunction.__call__(PyFunction.java:437)
+	at org.python.pycode._pyx7.f$0(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py:48)
+	at org.python.pycode._pyx7.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1687)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:535)
+	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:287)
+	at com.arm.jython.Jython.runScript(Jython.java:81)
+	at com.arm.jython.Jython.runScript(Jython.java:94)
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:91)
+	... 16 more
+
+!ENTRY com.arm.debugger.ux 4 0 2024-10-16 20:22:26.230
+!MESSAGE Unable to connect to DE1-SOC. The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+!STACK 0
+com.arm.debug.control.LaunchException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+
+See Target Console view for more details
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:242)
+	at com.arm.debug.control.target.AbstractTargetController.setupTarget(AbstractTargetController.java:74)
+	at com.arm.debug.control.ConnectionController.doPreDebugServiceInitialization(ConnectionController.java:695)
+	at com.arm.debug.control.ConnectionController.doInitialize(ConnectionController.java:611)
+	at com.arm.debug.control.ConnectionController.manageThreadModelAndInitialize(ConnectionController.java:591)
+	at com.arm.debug.control.ConnectionController.manageProgressResourceAndInitialize(ConnectionController.java:535)
+	at com.arm.debug.control.ConnectionController.initialize(ConnectionController.java:444)
+	at com.arm.debug.control.ConnectionManager.createConnection(ConnectionManager.java:284)
+	at com.arm.debug.launcher.TargetLauncher.launch(TargetLauncher.java:23)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at com.arm.debug.control.VariableResolvingLaunchConfiguration.launch(VariableResolvingLaunchConfiguration.java:274)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: com.arm.debug.launch.script.ScriptException: The script file ( altera_debug_server.py ) failed during execution:
+Port 3010 is already in use
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:102)
+	at com.arm.debug.launch.script.TargetControlScriptRunner.run(TargetControlScriptRunner.java:32)
+	at com.arm.debug.control.target.AbstractTargetController.runSetupScript(AbstractTargetController.java:239)
+	... 14 more
+Caused by: Traceback (most recent call last):
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py", line 48, in <module>
+    startDebugServer(configFile, rddidapBaseName, timeout)
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 319, in startDebugServer
+    launcher.launch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 105, in launch
+    serverProc = self.doLaunch()
+  File "/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py", line 137, in doLaunch
+    raise RuntimeError, 'Port 3010 is already in use'
+RuntimeError: Port 3010 is already in use
+
+	at org.python.core.PyException.doRaise(PyException.java:211)
+	at org.python.core.Py.makeException(Py.java:1638)
+	at org.python.core.Py.makeException(Py.java:1642)
+	at rddi_dap_debug_server$py.doLaunch$13(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:196)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.launch$12(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:111)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:134)
+	at org.python.core.PyFunction.__call__(PyFunction.java:416)
+	at org.python.core.PyMethod.__call__(PyMethod.java:126)
+	at rddi_dap_debug_server$py.startDebugServer$23(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py:322)
+	at rddi_dap_debug_server$py.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/rddi_dap_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:306)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:158)
+	at org.python.core.PyFunction.__call__(PyFunction.java:437)
+	at org.python.pycode._pyx9.f$0(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py:48)
+	at org.python.pycode._pyx9.call_function(/opt/arm/developmentstudio-2020.1-1/sw/debugger/configdb/Scripts/altera_debug_server.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:173)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1687)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:535)
+	at org.python.util.PythonInterpreter.execfile(PythonInterpreter.java:287)
+	at com.arm.jython.Jython.runScript(Jython.java:81)
+	at com.arm.jython.Jython.runScript(Jython.java:94)
+	at com.arm.debug.launch.script.PythonScriptRunner.run(PythonScriptRunner.java:91)
+	... 16 more
+!SESSION 2024-10-16 20:24:49.164 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-10-16 20:24:50.492
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2024-10-16 20:40:40.573
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1705)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1692)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)

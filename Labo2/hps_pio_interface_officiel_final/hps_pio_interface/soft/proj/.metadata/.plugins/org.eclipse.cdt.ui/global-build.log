@@ -1,0 +1,90 @@
+20:53:47 **** Incremental Build of configuration Debug for project hps_pio_interface ****
+make all 
+Building file: /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/hps_application.c"
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/hps_application.c:43:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+  printf("Constante ID : 0x%x \n", *constante);
+                            ^
+Finished building: /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/hps_application.c
+ 
+Building file: /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c"
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:56:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(switchDirection, SWITCHES_MASK, IN);
+                    ^~~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:63:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+                    ^~~~~~~~~~~~~
+In file included from /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:71:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(keyDirection, KEY_MASK, IN);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:83:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+Finished building: /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c
+     direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+ 
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+Building target: hps_pio_interface.axf
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+      ^~~~~~~~~~~~~~
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_pio_interface.axf"  ./src/hps_application.o ./src/pio_function.o   
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:77:21: warning: unused variable 'dataRegister' [-Wunused-variable]
+  volatile uint32_t *dataRegister = PIO1_DATA;
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:115:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:115:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:115:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:129:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:129:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:140:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:140:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Seg7_write':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:187:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:187:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Seg7_write_hex':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:201:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] \n");
+   ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:201:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c: In function 'Read_hex':
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:233:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:233:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/labo2/hps_pio_interface_officiel_final/hps_pio_interface/soft/src/pio_function.c:236:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building target: hps_pio_interface.axf
+ 

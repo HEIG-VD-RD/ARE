@@ -1,0 +1,158 @@
+08:44:44 **** Build of configuration Debug for project hps_gpio_interface ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -Wa,-adhlns="src/hps_application.o.lst" -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c:37:32: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+  printf("Direction register 0x%x \n : ", PIO0_DIRECTION);
+                                ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c:38:27: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+  printf("Data register 0x%x \n : ", PIO0_DATA);
+                           ^
+Finished building: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/hps_application.c
+ 
+Building file: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -Wa,-adhlns="src/pio_function.o.lst" -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c"
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:45:36: note: in expansion of macro 'PIO0_REG'
+ #define PIO0_DIRECTION             PIO0_REG(PIO_DIRECTION_OFFSET)   
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:47:41: note: in expansion of macro 'PIO0_DIRECTION'
+     volatile uint32_t *direction_leds = PIO0_DIRECTION;
+                                         ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:48:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(direction_leds, SWITCHES_MASK);
+                    ^~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:79:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask);
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:45:36: note: in expansion of macro 'PIO0_REG'
+ #define PIO0_DIRECTION             PIO0_REG(PIO_DIRECTION_OFFSET)   
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:53:41: note: in expansion of macro 'PIO0_DIRECTION'
+     volatile uint32_t *direction_leds = PIO0_DIRECTION;
+                                         ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:54:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(direction_leds, LEDS_MASK<<16 );
+                    ^~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:79:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask);
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: passing argument 1 of 'direction_init' makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:45:36: note: in expansion of macro 'PIO0_REG'
+ #define PIO0_DIRECTION             PIO0_REG(PIO_DIRECTION_OFFSET)   
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:61:20: note: in expansion of macro 'PIO0_DIRECTION'
+     direction_init(PIO0_DIRECTION, 0x0F);
+                    ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:79:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka volatile long unsigned int}'
+ void direction_init(uint32_t *direction, uint32_t mask);
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:35:25: warning: passing argument 1 of 'direction_init' makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO1_REG(_x_)   *(volatile uint32_t *)(PIO_CORE1_BASE_ADD + _x_)
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:49:36: note: in expansion of macro 'PIO1_REG'
+ #define PIO1_DIRECTION             PIO1_REG(PIO_DIRECTION_OFFSET)
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:67:20: note: in expansion of macro 'PIO1_DIRECTION'
+     direction_init(PIO1_DIRECTION, (uint32_t)HEXS_MASK);
+                    ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:79:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka volatile long unsigned int}'
+ void direction_init(uint32_t *direction, uint32_t mask);
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'direction_init':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("mask to apply 0x%x to register 0x%x that has value of 0x%x\n", mask, direction, *direction);
+     ^~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:5: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+Finished building: /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c
+     printf("mask to apply 0x%x to register 0x%x that has value of 0x%x\n", mask, direction, *direction);
+                              ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:47: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t * {aka long unsigned int *}' [-Wformat=]
+ 
+     printf("mask to apply 0x%x to register 0x%x that has value of 0x%x\n", mask, direction, *direction);
+                                               ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:73:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     printf("mask to apply 0x%x to register 0x%x that has value of 0x%x\n", mask, direction, *direction);
+                                                                      ^
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:44:36: note: in expansion of macro 'PIO0_REG'
+Building target: hps_gpio_interface.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_gpio_interface.axf"  ./src/hps_application.o ./src/pio_function.o   
+ #define PIO0_DATA                  PIO0_REG(PIO_DATA_OFFSET)        
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:92:36: note: in expansion of macro 'PIO0_DATA'
+     volatile uint32_t *ledsValue = PIO0_DATA;
+                                    ^~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:95:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:95:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:98:30: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     uint32_t current_state = ledsValue;
+                              ^~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:102:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     ledsValue = current_state | (value << 16);
+               ^
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:46:36: note: in expansion of macro 'PIO0_REG'
+ #define PIO0_OUTSET                PIO0_REG(PIO_OUTSET_OFFSET)
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:107:36: note: in expansion of macro 'PIO0_OUTSET'
+     volatile uint32_t *ledsValue = PIO0_OUTSET;
+                                    ^~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:111:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:111:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+In file included from /home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:34:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define PIO0_REG(_x_)   *(volatile uint32_t *)(PIO_CORE0_BASE_ADD + _x_) // _x_ is an offset with respect to the base address
+                         ^
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.h:47:36: note: in expansion of macro 'PIO0_REG'
+ #define PIO0_OUTCLEAR              PIO0_REG(PIO_OUTCLEAR_OFFSET)
+                                    ^~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:119:36: note: in expansion of macro 'PIO0_OUTCLEAR'
+     volatile uint32_t *ledsValue = PIO0_OUTCLEAR;
+                                    ^~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:122:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:122:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c: In function 'Key_read':
+/home/reds/Desktop/ARE/labo2/hps_pio_interface_officiel/hps_pio_interface/soft/src/pio_function.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building target: hps_gpio_interface.axf
+ 
+
+08:44:45 Build Finished. 0 errors, 22 warnings. (took 1s.404ms)
+

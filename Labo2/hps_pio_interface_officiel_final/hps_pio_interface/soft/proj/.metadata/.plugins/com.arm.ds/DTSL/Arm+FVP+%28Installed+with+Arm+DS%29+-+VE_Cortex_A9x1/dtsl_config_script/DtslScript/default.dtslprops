@@ -1,0 +1,4 @@
+#Tue Oct 15 17:59:57 CEST 2024
+options.trace.traceCapture=none
+options.coreTrace.core0=false
+options.trace.traceCapture.modelCapture.traceBufferSize=4GB

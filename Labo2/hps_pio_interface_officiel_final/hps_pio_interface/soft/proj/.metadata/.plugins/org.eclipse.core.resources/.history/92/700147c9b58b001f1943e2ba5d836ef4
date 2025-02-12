@@ -1,0 +1,65 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : hps_application.c
+ * Author               : 
+ * Date                 : 
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Turn ON leds and 7 segment display depending the value of button and switch, for DE1-SoC board
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ * 
+ *
+*****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "axi_lw.h"
+#include "pio_function.h"
+
+
+int __auto_semihosting;
+
+
+int main(void){
+
+
+	printf("PIo_CORE0_BASE_ADD + OFFSET 0x%x and 0x%x: \n", (PIO0_REG(PIO_DIRECTION_OFFSET)), PIO0_DIRECTION );
+	printf("Laboratoire: Programme simple avec E/S du HPS \n");
+
+	// Initialize all peripherals
+	printf("sur le point d init les leds\n");
+	Leds_init();
+	Segs7_init();
+	Switchs_init();
+	Keys_init();
+
+	while(true){
+		uint32_t valueSeg2 = read_hex(2);
+		if(Key_read(0))
+
+		}
+		if(Key_read(1))
+
+		}
+		if(Key_read(2))
+			valueSeg2 = (valueSeg2 + 1) %
+			Se
+		}
+		if(Key_read(3))
+
+		}
+}
+
+

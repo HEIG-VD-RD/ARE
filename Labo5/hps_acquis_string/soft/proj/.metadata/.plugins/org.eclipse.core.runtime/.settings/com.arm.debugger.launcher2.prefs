@@ -1,0 +1,4 @@
+config_db_path=/opt/devstudio/2020.1/sw/debugger/configdb\:
+eclipse.preferences.version=1
+enabled_config_db_path=/opt/devstudio/2020.1/sw/debugger/configdb\:
+last_connection_browser_settings=<?xml version\="1.0" encoding\="UTF-8"?>\n<section name\="prefs">\n\t<item key\="DIALOG_X_ORIGIN" value\="260"/>\n\t<item key\="DIALOG_Y_ORIGIN" value\="111"/>\n\t<item key\="DIALOG_WIDTH" value\="613"/>\n\t<item key\="DIALOG_HEIGHT" value\="319"/>\n\t<item key\="DIALOG_FONT_NAME" value\="1|Sans|10.0|0|GTK|1|"/>\n</section>\n

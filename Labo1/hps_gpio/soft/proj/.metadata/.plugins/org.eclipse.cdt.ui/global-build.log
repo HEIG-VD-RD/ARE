@@ -1,0 +1,12 @@
+15:08:44 **** Incremental Build of configuration Debug for project hps_gpio ****
+make all 
+Building file: /home/reds/Desktop/ARE/Labo1/hps_gpio/soft/src/hps_gpio.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -Wa,-adhlns="src/hps_gpio.o.lst" -MMD -MP -MF"src/hps_gpio.d" -MT"src/hps_gpio.o" -c -o "src/hps_gpio.o" "/home/reds/Desktop/ARE/Labo1/hps_gpio/soft/src/hps_gpio.c"
+Finished building: /home/reds/Desktop/ARE/Labo1/hps_gpio/soft/src/hps_gpio.c
+ 
+Building target: hps_gpio.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_gpio.axf"  ./src/hps_gpio.o   
+Finished building target: hps_gpio.axf
+ 

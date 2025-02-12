@@ -1,0 +1,121 @@
+m255
+K4
+z2
+!s11e vcom 2020.1_1 2020.03, Mar  4 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/hard/sim
+Eavalon_console_sim
+Z1 w1733490027
+DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+8../src_tb/avalon_console_sim.vhd
+F../src_tb/avalon_console_sim.vhd
+l0
+L22 1
+VB^^Kfb@JG3h]D[UCQ>U6;0
+!s100 >mf0n65QYkDhB=TP9eJRi3
+Z5 OL;C;2020.1_1;71
+33
+Z6 !s110 1734045942
+!i10b 1
+Z7 !s108 1734045942.000000
+!s90 -reportprogress|300|-2008|-work|work|../src_tb/avalon_console_sim.vhd|
+!s107 ../src_tb/avalon_console_sim.vhd|
+!i113 0
+Z8 o-2008 -work work
+Z9 tExplicit 1 CvgOpt 0
+Eavl_user_interface
+Z10 w1734045396
+R2
+R3
+R4
+!i122 0
+R0
+Z11 8../src/avl_user_interface.vhd
+Z12 F../src/avl_user_interface.vhd
+l0
+L33 1
+V5`Pf?<SJNH=DaTz2J;`ON3
+!s100 WHI@aLJ4W]N^I18ZQoT<B0
+R5
+33
+R6
+!i10b 1
+R7
+Z13 !s90 -reportprogress|300|-2008|-work|work|../src/avl_user_interface.vhd|
+Z14 !s107 ../src/avl_user_interface.vhd|
+!i113 0
+R8
+R9
+Artl
+R2
+R3
+R4
+DEx4 work 18 avl_user_interface 0 22 5`Pf?<SJNH=DaTz2J;`ON3
+!i122 0
+l143
+L75 203
+V;Zznm:7[LBJ>UU32kb7c<1
+!s100 c35RFT71WkBh7F]cz?R_o1
+R5
+33
+R6
+!i10b 1
+R7
+R13
+R14
+!i113 0
+R8
+R9
+Egenerateur_strings
+R1
+R2
+R3
+R4
+!i122 1
+R0
+Z15 8../src/generateur_strings.vhd
+Z16 F../src/generateur_strings.vhd
+l0
+L34 1
+VU72Pg90cCf8alRjRK989c2
+!s100 bIEC?eI4Xo1P5OD]IGiIM0
+R5
+33
+R6
+!i10b 1
+R7
+Z17 !s90 -reportprogress|300|-2008|-work|work|../src/generateur_strings.vhd|
+Z18 !s107 ../src/generateur_strings.vhd|
+!i113 0
+R8
+R9
+Astruct
+R2
+R3
+R4
+DEx4 work 18 generateur_strings 0 22 U72Pg90cCf8alRjRK989c2
+!i122 1
+l127
+L61 175
+VKNRj=mcL09Nl;MADCLPOc3
+!s100 7VKHb1iC86JCNC=QX=7Li3
+R5
+33
+R6
+!i10b 1
+R7
+R17
+R18
+!i113 0
+R8
+R9

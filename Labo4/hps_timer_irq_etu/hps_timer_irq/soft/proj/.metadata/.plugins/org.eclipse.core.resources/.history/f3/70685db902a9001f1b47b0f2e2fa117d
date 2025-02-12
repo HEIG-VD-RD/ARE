@@ -1,0 +1,187 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : app_timer_irq.c
+ * Author               : Anthony Convers
+ * Date                 : 27.10.2022
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Using timer IRQ on DE1-SoC board
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ * 0.0    27.10.2022  ACS           Initial version.
+ *
+ *****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include "axi_lw.h"
+#include "pio_function.h"
+#include "timer_config.h"
+
+
+int __auto_semihosting;
+
+#define NUM_KEYS 4
+
+typedef struct {
+	uint32_t seconds;
+	uint32_t milliseconds;
+
+ } my_time_t;
+
+typedef struct{
+	int centieme;
+	int dizaine;
+	int unite;
+	int milli;
+} number_t;
+
+void set_A9_IRQ_stack(void);
+void config_GIC(void);
+void enable_A9_interrupts(void);
+void init_chrono(my_time_t *chrono, uint32_t seconds);
+void update_display(number_t chrono);
+
+int signal_event_flag;
+
+
+int main(void)
+{
+
+    printf("Laboratoire: Timer IRQ \n");
+
+    // TO BE COMPLETE
+
+    // Initialisation
+
+    // Timer config
+    init_timer();
+    // IRQ stack config
+    set_A9_IRQ_stack();
+    // GIC config
+    config_GIC();
+    // Interrupts enable
+    enable_A9_interrupts();
+
+
+    Leds_init();
+    Segs7_init();
+    Switchs_init();
+    Keys_init();
+    //enable_timer();
+
+    signal_event_flag = 0;
+    my_time_t chrono;
+    number_t numeral_time;
+
+    volatile uint32_t *constante = (volatile uint32_t *)CONSTANTE_BASE;
+    printf("Constante ID : 0x%x \n", *constante);
+    for (int i = 0; i < 4; i++)
+    {
+        Seg7_write_hex(i, 0);
+    }
+
+    bool previousState[NUM_KEYS] = {false, false, false, false};
+    while (1)
+    {
+    	uint32_t value_switches = Switchs_read();
+    	if(signal_event_flag){
+    		signal_event_flag = 0;
+			Leds_toggle(0x200);
+
+			if (chrono.milliseconds == 0) {
+			        if (chrono.seconds > 0) {
+			            chrono.seconds--;
+			            chrono.milliseconds = 9;  // On remet 999 ms
+			        }
+			    } else {
+			        chrono.milliseconds -= 1;  // Chaque interruption représente 100 ms
+			    }
+
+			if((chrono.milliseconds == 0) and (chrono.seconds == 0)){
+				pause_timer();
+			}
+
+			update_display(numeral_time);
+        	get_number(numeral_time,chrono);
+        	update_display(numeral_time);
+
+
+
+			void get_number(number_t *num, my_time_t chrono)
+    	}void update_display(number_t chrono)
+        bool currentState[NUM_KEYS] = {false, false, false, false};
+        if (currentState[0] && !previousState[0])
+        {
+        	resume_timer();
+        	Leds_set(0x100);
+        }
+
+        if (currentState[1] && !previousState[2])
+        {
+        	pause_timer();
+        	Leds_clear(0x100);
+        }
+
+        if (currentState[3] && !previousState[3])
+        {
+        	Leds_write( value_switches & 0x0ff);
+        	init_chrono(&chrono, value_switches);
+        	get_number(numeral_time,chrono);
+        	update_display(numeral_time);
+            
+        }
+
+        // Change of state for the previous. For the rising edge verification
+        for (int i = 0; i < NUM_KEYS; i++)
+        {
+            previousState[i] = currentState[i];
+        }
+    }
+
+    return 0;
+}
+
+
+void init_chrono(my_time_t *chrono, uint32_t seconds) {
+    chrono->seconds = seconds;
+    chrono->milliseconds = 0;
+}
+
+void get_number(number_t *num, my_time_t chrono){
+
+	num->centieme = (int)chrono.seconds / 100;
+	num->dizaine = (int)(chrono.seconds / 10) % 10;
+	num->unite = (int)chrono.seconds % 10;
+	num->milli = (int)chrono.milliseconds;
+
+}
+
+void update_display(number_t chrono) {
+    Seg7_write_hex(0, chrono.milli );
+    Seg7_write_hex(1, chrono.unite);
+    Seg7_write_hex(2, chrono.dizaine);
+    Seg7_write_hex(3, chrono.centieme);
+
+
+}
+
+
+
+void hps_timer_ISR(void)
+{
+	//printf("hello\n");
+	clear_interrupt();
+	signal_event_flag = 1;
+}

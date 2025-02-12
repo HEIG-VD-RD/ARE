@@ -1,0 +1,143 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : pio_function.c
+ * Author               :
+ * Date                 :
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Pio function
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ *
+ *
+ *****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include "pio_function.h"
+
+
+
+// TO BE COMPLETE
+//***************************//
+//****** Init function ******//
+/* volatile uint32_t *pio0_data = (PIO0_DATA);
+volatile uint32_t *pio0_direction = (PIO0_DIRECTION);
+volatile uint32_t *pio0_outset = (PIO0_OUTSET);
+volatile uint32_t *pio0_outclear = (PIO0_OUTCLEAR);
+
+volatile uint32_t *pio1_data = (PIO1_DATA);
+volatile uint32_t *pio1_direction = (PIO1_DIRECTION);
+volatile uint32_t *pio1_outset = (PIO1_OUTSET);
+volatile uint32_t *pio1_outclear = (PIO1_OUTCLEAR); */
+
+
+void Switchs_init(void)
+{
+    volatile uint32_t *direction_leds = PIO0_DIRECTION;
+    direction_init(direction_leds, SWITCHES_MASK);
+}
+
+void Leds_init(void)
+{
+    volatile uint32_t *direction_leds = PIO0_DIRECTION;
+    direction_init(direction_leds, LEDS_MASK<<16 );
+    Leds_set(LEDS_INIT);
+
+}
+
+void Keys_init(void)
+{
+    direction_init(PIO0_DIRECTION, 0x0F);
+    
+}
+
+void Segs7_init(void)
+{
+    direction_init(PIO1_DIRECTION, (uint32_t)HEXS_MASK);
+    PIO0_OUTSET|= ~HEX_INIT;
+}
+
+void direction_init(uint32_t *direction, uint32_t mask)
+{
+    printf("mask to apply %x \n", mask);
+    *direction |= mask;
+
+}
+
+//***********************************//
+//****** Global usage function ******//
+
+uint32_t Switchs_read(void)
+{
+    uint32_t current_state = PIO0_DATA;
+ 
+    uint32_t switches_state = (current_state & 0x3FF0) >> 4;
+
+    return switches_state;
+}
+
+void Leds_write(uint32_t value)
+{
+    volatile uint32_t *ledsValue = PIO0_DATA;
+    if (value > 0x3FF)
+    {
+        printf("Error: value is too big\n");
+        return;
+    }
+    uint32_t current_state = ledsValue;
+
+    current_state &= ~(0x3FF << 16);
+
+    ledsValue = current_state | (value << 16);
+}
+
+void Leds_set(uint32_t maskleds)
+{
+    volatile uint32_t *ledsValue = PIO0_OUTSET;
+	
+    if (maskleds > 0x3ff)
+    {
+        printf("Error: maskleds is too big\n");
+        return;
+    }
+    *ledsValue |= (maskleds << 16);
+}
+
+void Leds_clear(uint32_t maskleds)
+{
+    volatile uint32_t *ledsValue = PIO0_OUTCLEAR;
+    if (maskleds > 0x3ff)
+    {
+        printf("Error: maskleds is too big\n");
+        return;
+    }
+
+    *ledsValue |= (maskleds << 16);
+}
+
+void Leds_toggle(uint32_t maskleds)
+{
+}
+
+bool Key_read(int key_number)
+{
+}
+
+void Seg7_write(int seg7_number, uint32_t value)
+{
+}
+
+void Seg7_write_hex(int seg7_number, uint32_t value)
+{
+}

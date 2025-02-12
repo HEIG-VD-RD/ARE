@@ -1,0 +1,75 @@
+#include "timer_config.h"
+
+#define ENABLE_BIT (0x1 << 0)
+#define MODE_BIT (0x1 << 1)
+#define INT_MASK_BIT (0x1 << 2)
+#define  TIMER_VALUE 2500000
+#define MAX_VALUE 0xFFFFFFFF
+
+void init_timer(void)
+{
+
+    disable_timer();
+    set_mode(USER);
+    set_interrupt_mask(NOT_MASK);
+    load_timer(TIMER_VALUE);
+    enable_timer();
+}
+
+void enable_timer(void)
+{
+    volatile uint32_t *timer_control = T1_CONTROL_REG;
+    *timer_control |= ENABLE_BIT;
+}
+
+void disable_timer(void)
+{
+    volatile uint32_t *timer_control = T1_CONTROL_REG;
+
+    *timer_control &= ~ENABLE_BIT;
+}
+
+void set_mode(timer_mode_t mode)
+{
+    volatile uint32_t *timer_control = T1_CONTROL_REG;
+
+    switch (mode)
+    {
+    case FREE_RUNNING:
+        *timer_control &= ~MODE_BIT;
+        break;
+    case USER:
+        *timer_control |= MODE_BIT;
+        break;
+    default:
+        printf("Not a valid mode\n");
+    }
+}
+
+void set_interrupt_mask(interr_t interr)
+{
+    volatile uint32_t *timer_control = T1_CONTROL_REG;
+
+    switch (interr)
+    {
+    case NOT_MASK:
+        *timer_control &= ~INT_MASK_BIT;
+        break;
+    case MASK:
+        *timer_control |= INT_MASK_BIT;
+        break;
+    default:
+        printf("Not a valid interrupt mask\n");
+    }
+}
+
+void timer_load(uint32_t value)
+{
+    volatile uint32_t *timer_load = T1_LOAD_COUNT_REG;
+    if(value > MAX_VALUE)
+    {
+        printf("Value too big\n");
+        return;
+    }
+    *timer_load = value;
+}

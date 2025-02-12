@@ -1,0 +1,706 @@
+14:35:34 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:94:32: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("Reliability 0x%x\n",reliability);
+                                ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:36:17 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:37:39 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:128:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:133:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building target: hps_aquis_string.axf
+ 
+14:39:53 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:61:25: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode 0x%x\n",(switches & SWITCH_7));
+                         ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode shift 0x%x\n",(switches & SWITCH_7) >> 8);
+                               ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("sw_mode 0x%x\n",sw_mode);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:136:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:136:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:136:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:136:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:94:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:65:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:40:59 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:61:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("switches 0x%x\n", switches)
+                             ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:9: error: expected ';' before 'printf'
+         printf("mode 0x%x\n",(switches & SWITCH_7));
+         ^~~~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode shift 0x%x\n",(switches & SWITCH_7) >> 8);
+                               ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:64:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("sw_mode 0x%x\n",sw_mode);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:95:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:66:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+make: *** [src/subdir.mk:30: src/hps_application.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:41:03 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:61:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("switches 0x%x\n", switches);
+                             ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:25: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode 0x%x\n",(switches & SWITCH_7));
+                         ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode shift 0x%x\n",(switches & SWITCH_7) >> 8);
+                               ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:64:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("sw_mode 0x%x\n",sw_mode);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+ 
+                                                      ^
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:95:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:66:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building target: hps_aquis_string.axf
+ 
+14:42:02 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:61:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("switches 0x%x\n", switches);
+                             ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:25: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode 0x%x\n",(switches & SWITCH_7));
+                         ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode shift 0x%x\n",(switches & SWITCH_7) >> 7);
+                               ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:64:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("sw_mode 0x%x\n",sw_mode);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:95:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:66:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:42:30 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:61:29: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("switches 0x%x\n", switches);
+                             ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:25: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode 0x%x\n",(switches & SWITCH_7));
+                         ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'long unsigned int' [-Wformat=]
+         printf("mode shift 0x%x\n",(switches & SWITCH_7) >> 7);
+                               ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:64:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+         printf("sw_mode 0x%x\n",sw_mode);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:137:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:95:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:66:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:43:15 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:129:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:129:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:129:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:134:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:134:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:134:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:134:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:92:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:63:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:46:06 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:48:15 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c: In function 'Mode_gen_write':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c:103:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     printf("current state 0x%x\n", current_state);
+                              ^
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:58:24 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c: In function 'Mode_delay_write':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c:110:5: error: expected ';' before 'current_state'
+     current_state &= ~MODE_DELAY_MASK;
+     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:23: src/avalon_function.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:58:28 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:58:50 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+14:59:14 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:126:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:131:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+                     ^~~~
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+                  ^~~~~~~~~~~
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+15:00:48 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+15:05:05 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+make: Nothing to be done for 'all'.
+15:23:42 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c: In function 'Mode_gen_write':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c:104:30: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+     printf("Current_state 0x%x\n", current_state);
+                              ^
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+15:29:18 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:55 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/avalon_function.d" -MT"src/avalon_function.o" -c -o "src/avalon_function.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c"
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/avalon_function.c
+ 
+Building target: hps_aquis_string.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 
+16:26:42 **** Incremental Build of configuration Debug for project hps_aquis_string ****
+make all 
+Building file: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/hps_application.d" -MT"src/hps_application.o" -c -o "src/hps_application.o" "/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c"
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c: In function 'main':
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:48:28: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante : 0x%x \n", *constante);
+                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:49:21: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("ID : 0x%x \n", *ID);
+                     ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:127:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:127:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:127:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("OK : status: %d , checksum: %d, calcul integrity: %d, string: %s\n", data.status, data.checksum, data.integrity, data.string);
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:39: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                       ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:54: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                      ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:76: warning: format '%d' expects argument of type 'int', but argument 4 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                                                                            ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:132:24: warning: format '%d' expects argument of type 'int', but argument 6 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+                 printf("ER : status: %d , checksum: %d, calcul integrity: %d, string: %s\n \
+                        ^
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:91:21: warning: unused variable 'data' [-Wunused-variable]
+         char_data_t data = Read_string_and_verify();
+Finished building: /home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c
+                     ^~~~
+ 
+Building target: hps_aquis_string.axf
+/home/reds/Desktop/ARE/ARE-Labo5/hps_acquis_string/soft/src/hps_application.c:62:18: warning: unused variable 'reliability' [-Wunused-variable]
+         uint32_t reliability = switches & SWITCH_0;
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+                  ^~~~~~~~~~~
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/arm_tools/baremetal/arm-altera-eabi/lib/cycloneV-dk-ram-hosted.ld" -o "hps_aquis_string.axf"  ./src/avalon_function.o ./src/hps_application.o   
+Finished building target: hps_aquis_string.axf
+ 

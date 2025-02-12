@@ -1,0 +1,240 @@
+/*****************************************************************************************
+ * HEIG-VD
+ * Haute Ecole d'Ingenerie et de Gestion du Canton de Vaud
+ * School of Business and Engineering in Canton de Vaud
+ *****************************************************************************************
+ * REDS Institute
+ * Reconfigurable Embedded Digital Systems
+ *****************************************************************************************
+ *
+ * File                 : pio_function.c
+ * Author               :
+ * Date                 :
+ *
+ * Context              : ARE lab
+ *
+ *****************************************************************************************
+ * Brief: Pio function
+ *
+ *****************************************************************************************
+ * Modifications :
+ * Ver    Date        Student      Comments
+ * 1.0 	18.10.2024 	 Rafael Dousse
+ *
+ *****************************************************************************************/
+#include <stdint.h>
+#include <stdbool.h>
+#include "pio_function.h"
+
+#define SWITCHS_OFFSET  0
+#define LEDS_OFFSET        10
+#define KEYS_OFFSET        20
+
+// TO BE COMPLETE
+
+//***********************************//
+//***Numbers and letters in hexa****//
+uint32_t hexValue[] = {
+	0x3f, // 0
+	0x06, // 1
+	0x5b, // 2
+	0x4f, // 3
+	0x66, // 4
+	0x6d, // 5
+	0x7d, // 6
+	0x07, // 7
+	0x7f, // 8
+	0x6f, // 9
+	0x77, // A
+	0x7c, // b
+	0x39, // C
+	0x5e, // d
+	0x79, // E
+	0x71  // F
+};
+//***********************************//
+//****** Init function ******//
+void Switchs_init(void)
+{
+    volatile uint32_t *switchDirection = PIO0_DIRECTION;
+    direction_init(switchDirection, SWITCHES_MASK << SWITCHS_OFFSET , IN);
+}
+
+void Leds_init(void)
+{
+	uint8_t shift = LEDS_OFFSET;
+    volatile uint32_t *ledsDirection = PIO0_DIRECTION;
+    direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+    Leds_set(LEDS_INIT);
+
+}
+
+void Keys_init(void)
+{
+    volatile uint32_t *keyDirection = PIO0_DIRECTION;
+    direction_init(keyDirection, KEY_MASK << KEYS_OFFSET, IN);
+}
+
+void Segs7_init(void)
+{
+	volatile uint32_t *segDirection = PIO1_DIRECTION;
+	volatile uint32_t *dataRegister = PIO1_DATA;
+
+	uint8_t hex2 = 2;
+	uint8_t hex3 = 3;
+	uint8_t value = 0;
+
+    direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+	Seg7_write_hex(hex2,value);
+    Seg7_write(hex3,UNDERSCORE);
+}
+
+void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value)
+{
+	if (dir_value == IN) {
+		// Set the direction IN for the keys, switches...
+	        *direction &= ~mask;
+	} else {
+		// Set the direction OUT for the LEDS, HEX....
+	        *direction |= mask;
+	}
+}
+
+//***********************************//
+//****** Global usage function ******//
+
+uint32_t Switchs_read(void)
+{
+    volatile uint32_t *currentState = PIO0_DATA;
+    uint32_t switches_state = (*currentState & SWITCHES_MASK) >> SWITCHS_OFFSET;
+
+    return switches_state;
+}
+
+void Leds_write(uint32_t value)
+{
+    volatile uint32_t *ledsValue = PIO0_DATA;
+    if (value > 0x3FF)
+    {
+        printf("Error: value is too big\n");
+        return;
+    }
+    uint32_t current_state = *ledsValue;
+    current_state &= (~(0x3FF << LEDS_OFFSET));
+    *ledsValue = current_state | (value << LEDS_OFFSET);
+}
+
+void Leds_set(uint32_t maskleds)
+{
+    volatile uint32_t *ledsValue = PIO0_OUTSET;
+	
+    if (maskleds > 0x3ff)
+    {
+        printf("Error: maskleds is too big\n");
+        return;
+    }
+    *ledsValue |= (maskleds << LEDS_OFFSET);
+}
+
+void Leds_clear(uint32_t maskleds)
+{
+    volatile uint32_t *ledsValue = PIO0_OUTCLEAR;
+    if (maskleds > 0x3ff)
+    {
+        printf("Error: maskleds is too big\n");
+        return;
+    }
+
+    *ledsValue |= (maskleds << LEDS_OFFSET);
+}
+
+void Leds_toggle(uint32_t maskleds)
+{
+    volatile uint32_t *ledsValue = PIO0_DATA;
+
+    uint32_t current_state = (*ledsValue >> LEDS_OFFSET) & LEDS_MASK;
+    // xor op to toggle only the leds we want
+    uint32_t toggled_value = current_state ^ maskleds;
+    Leds_write(toggled_value);
+}
+
+bool Key_read(int key_number)
+{
+	volatile uint32_t *dataValue = PIO0_DATA;
+	// Get the key number and check its value
+	uint32_t keyValue = ((*dataValue  >> KEYS_OFFSET) >> key_number)& 0x1;
+	return (keyValue == 0 ? true : false);
+}
+
+void Seg7_write(int seg7_number, uint32_t value)
+{
+
+	uint32_t maskSeg;
+	volatile uint32_t *dataRegister = PIO1_DATA;
+	switch(seg7_number){
+	case 0:
+		maskSeg = HEX_0;
+		break;
+	case 1:
+		maskSeg = HEX_1;
+		value =value << 7;
+		break;
+	case 2:
+		maskSeg = HEX_2;
+		value = value << 14;
+		break;
+	case 3:
+		maskSeg = HEX_3;
+		value = value << 21;
+		break;
+	default:
+		printf("Wrong number. It should be between [0:3]\n");
+		return;
+	}
+
+	// Operation to write one hex segment and not erase the others
+	*dataRegister &= ~maskSeg;
+	*dataRegister |= (~value & maskSeg );
+
+}
+
+void Seg7_write_hex(int seg7_number, uint32_t value)
+{
+
+	if(value > HEX_MAX){
+		printf("Value not accepted. It shoud be bewteen [0x0:0xf] \n");
+		return;
+	}
+	// Use of the precedent function and the array to write an hexa value
+	Seg7_write(seg7_number,hexValue[value] );
+}
+
+uint32_t Read_hex(int seg7_number)
+{
+	volatile uint32_t *dataRegister = PIO1_DATA;
+	uint32_t value;
+	switch (seg7_number){
+	case 0:
+		return *dataRegister & HEX_0;
+	case 1:
+		return (*dataRegister & HEX_1) >> 7;
+	case 2:
+		// not operation used since low state to get the "normal" value
+		value = (~(*dataRegister) & HEX_2) >> 14;
+
+		//Return i which is the number in the array of the value compared
+	    for (int i = 0; i < 16; i++) {
+	        if (hexValue[i] == value) {
+	            return i;
+	        }
+	    }
+		break;
+	case 3:
+		// not operation used since low state to get the "normal" value
+		value = (~(*dataRegister) & HEX_3) >> 21;
+		return value;
+	default:
+		printf("Wrong number. It should be between [0:3]\n");
+		return -1;
+	}
+}

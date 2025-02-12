@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;hps_aquis_string/src/pio_function.h&apos; to &apos;avalon_function.h&apos;" description="Rename resource &apos;pio_function.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pio_function.h" name="avalon_function.h" stamp="1733491647133" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;hps_aquis_string/src/pio_function.c&apos; to &apos;avalon_function.c&apos;" description="Rename resource &apos;pio_function.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/pio_function.c" name="avalon_function.c" stamp="1733491667593" updateReferences="true"/>
+</session>

@@ -1,0 +1,13 @@
+*.tcl~
+*.txt
+*.csv
+*.qws
+*.sopcinfo
+db
+hps_isw_handoff
+incremental_db
+output_files
+qsys_system
+.qsys_edit
+DE1_SoC_top.qsf
+../src/timer.vhd.bak

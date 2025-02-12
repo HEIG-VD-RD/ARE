@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/reds/Desktop/ARE/ARE_hps_temps_reaction/sim
+Eavl_user_interface
+w1737201788
+DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+d/home/reds/Desktop/ARE/ARE_hps_temps_reaction/hard/sim
+8../src/avl_user_interface.vhd
+F../src/avl_user_interface.vhd
+l0
+L33 1
+VYOKU;P72SEhW83MR^n;Bf3
+!s100 MPGdgS]6bB]WAN@kjNbcn3
+OL;C;2020.1_1;71
+33
+!s110 1737210852
+!i10b 1
+!s108 1737210852.000000
+!s90 -reportprogress|300|-2008|-work|work|../src/avl_user_interface.vhd|
+!s107 ../src/avl_user_interface.vhd|
+!i113 0
+o-2008 -work work
+tExplicit 1 CvgOpt 0

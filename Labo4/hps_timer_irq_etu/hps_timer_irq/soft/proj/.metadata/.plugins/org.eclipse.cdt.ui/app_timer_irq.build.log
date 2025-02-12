@@ -1,0 +1,108 @@
+09:52:20 **** Incremental Build of configuration Debug for project app_timer_irq ****
+make all 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/app_timer_irq.d" -MT"src/app_timer_irq.o" -c -o "src/app_timer_irq.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c: In function 'main':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c:91:31: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka volatile long unsigned int}' [-Wformat=]
+     printf("Constante ID : 0x%x \n", *constante);
+                               ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/app_timer_irq.c
+ 
+Building file: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+Invoking: GCC C Compiler 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -O0 -g -Wall -MMD -MP -MF"src/pio_function.d" -MT"src/pio_function.o" -c -o "src/pio_function.o" "/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c"
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Switchs_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:60:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(switchDirection, SWITCHES_MASK << SWITCHS_OFFSET , IN);
+                    ^~~~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:67:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(ledsDirection, LEDS_MASK << shift, OUT );
+                    ^~~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Keys_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:75:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(keyDirection, KEY_MASK << KEYS_OFFSET, IN);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Segs7_init':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:87:20: warning: passing argument 1 of 'direction_init' discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+     direction_init(segDirection, (uint32_t)HEXS_MASK, OUT);
+                    ^~~~~~~~~~~~
+In file included from /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:27:0:
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.h:100:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'volatile uint32_t * {aka volatile long unsigned int *}'
+ void direction_init(uint32_t *direction, uint32_t mask, DIRECTION dir_value );
+      ^~~~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:85:10: warning: unused variable 'value' [-Wunused-variable]
+  uint8_t value = 0;
+          ^~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:84:10: warning: unused variable 'hex3' [-Wunused-variable]
+  uint8_t hex3 = 3;
+          ^~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:83:10: warning: unused variable 'hex2' [-Wunused-variable]
+  uint8_t hex2 = 2;
+          ^~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:81:21: warning: unused variable 'dataRegister' [-Wunused-variable]
+  volatile uint32_t *dataRegister = PIO1_DATA;
+                     ^~~~~~~~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("Error: value is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: warning: incompatible implicit declaration of built-in function 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:117:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_set':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:131:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:131:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Leds_clear':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:142:9: warning: incompatible implicit declaration of built-in function 'printf'
+         printf("Error: maskleds is too big\n");
+         ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:142:9: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:189:61: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("Wrong number. It should be between [0:3] and not %d\n");
+                                                             ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Seg7_write_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:203:70: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("Value not accepted. It shoud be bewteen [0x0:0xf] and not %d\n", value);
+                                                                      ^
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c: In function 'Read_hex':
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:235:3: warning: incompatible implicit declaration of built-in function 'printf'
+   printf("Wrong number. It should be between [0:3]\n");
+   ^~~~~~
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:235:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+/home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c:238:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: /home/reds/Desktop/ARE/labo4/hps_timer_irq_etu/hps_timer_irq/soft/src/pio_function.c
+ 
+Building target: app_timer_irq.axf
+Invoking: GCC C Linker 6.2.0 [arm-altera-eabi]
+arm-altera-eabi-gcc -T "/opt/intelFPGA/18.1/University_Program/Monitor_Program/build/altera-socfpga-hosted-with-vectors.ld" -Wl,--defsym -Wl,arm_program_mem=0x40 -Wl,--defsym -Wl,arm_available_mem_size=0x3fffffb8 -Wl,--defsym -Wl,__cs3_stack=0x3ffffff8 -Wl,--section-start -Wl,.vectors=0x0 -o "app_timer_irq.axf"  ./src/app_timer_irq.o ./src/exceptions.o ./src/pio_function.o ./src/timer_config.o   
+Finished building target: app_timer_irq.axf
+ 
+
+09:52:21 Build Finished. 0 errors, 19 warnings. (took 1s.180ms)
+
